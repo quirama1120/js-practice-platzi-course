@@ -1,14 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/styles/areas.css">
     <script src="./src/js/areas.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="/imágenes/pexels-ekaterina-bolovtsova-7307618.jpg" rel="stylesheet">
     <title>Áreas y perímetros de figuras geométricas</title>
 </head>
+
 <body>
+    <header>
+        <h1>Areas y perímetros de fíguras geométricas</h1>
+    </header>
+        <section class="cuadrado">
+            
+        <div class="cuadrado__titulo">
+    <h2>Area y perímetro del cuadrado</h2>
+    <img src="https://img.icons8.com/ios/50/000000/square-spinner.png"/>
+    </div>
     
+    <form> 
+        <div class="cuadrado__form">
+    <label for="inputCuadrado">Ingresa los lados del cuadrado</label>
+    <input type="number" id="inputCuadrado">
+    <div class="cuadrado__botones">
+    <button type="button" onclick= "calcularAreaCuadrado()">Calcular Area</button>
+    <button type="button" onclick= "calcularPerimetroCuadrado()">Calcular Perímetro</button>
+    </div>
+    </div>
+    </form>
+    <table>
+        <tr>
+            <th>Area</th>
+            <th>Perimetro</th>
+        </tr>
+        <tr>
+    <td id="resultArea"></td>
+    <td id="resultPerimeter"></td>
+        </tr>      
+    </table>
+        </section>
+        <section class="triangulo">
+            <div class="triangulo__titulo">
+            <img src="https://img.icons8.com/wired/64/000000/three-triangles.png"/>
+            <h3>Area y perímetro del Triángulo</h3>
+            </div>
+            <form class="triangulo__form">
+                <label for="inputLado1">Ingesa el primer lado del Triángulo</label>
+                <input type="number" id="inputLado1">
+                <label for="inputLado2">Ingresa el segundo lado del Triángulo</label>
+                <input type="number" id="inputLado2">
+                <label for="base">Ingresa la base del Triángulo</label>
+                <input type="number" id="base">
+                <label for="altura">Ingresa la altura del Triángulo</label>
+                <input type="number" id="altura"> 
+                
+                <button type="button" onclick="calcularAlturaLado1()">Calcular altura Lado1</button>
+                <button type="button" onclick="calcularAlturaLado2()">Calcular altura Lado2</button>
+                <button type="button" onclick="calcularBase()">Calcular altura de la base del Triángulo</button>
+                <button type="button" onclick="calcularAreaTriangulo()">Calcular Area </button>
+                <button type="button" onclick="calcularPerimetroTriangulo()">Calcular Perímetro</button>
+            </form>  
+            <table>
+                <tr>
+                    <th>Altura Lado 1</th>
+                    <th>Altura Lado2</th>
+                    <th>Altura Base</th>
+                    <th>Area Triángulo</th>
+                    <th>Perímetro Triángulo</th>
+                </tr>
+                <tr>
+            <td id="alturaLado1"></td>
+            <td id="alturaLado2"></td>
+            <td id="alturaBase"></td>
+            <td id="areaTriangulo"></td>
+            <td id="perimetroTriangulo"></td>
+                </tr>      
+            </table>
+        </section>
+        <section class="circulo">
+            <div class="circulo__titulo">
+            <img src="https://img.icons8.com/ios-filled/50/000000/loading-circle--v1.png"/>
+            <h4>Area y perímetro del Círculo</h4>
+            </div>
+            <form class="circulo__form">
+                <label for="radio">Introduce el Radio del Círculo</label>
+                <input type="number" id="radio">
+                <button type="button" onclick="calcularDiametro()">Calcular Diámetro</button>
+                <button type="button" onclick="calcularCircunferencia()">Calcular Circunferencia</button>
+                <button type="button" onclick="calcularRadio()">Calcular Radio</button>
+    
+            </form>
+            <table>
+                <tr>
+                    <th>Diámetro</th>
+                    <th>Circunferencia</th>
+                    <th>Radio</th>
+                </tr>
+                <tr>
+            <td id="calculaDiametro"></td>
+            <td id="calcularCircunferencia"></td>
+            <td id="calcularRadio"></td>
+                </tr>      
+            </table>       
+        </section>
+        <footer>
+            <a href="/index.html">HOME</a>
+        </footer>
 </body>
+
 </html>
