@@ -1,14 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/styles/promedio.css">
     <script src="./src/js/promedio.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&display=swap" rel="stylesheet">
     <title>calculadora de promedio, media, mediana, media aritmética y moda</title>
 </head>
+
 <body>
-    
+    <header>
+        <h1>PROMEDIO, MEDIA, <br> MEDIA ARITMÉTICA Y MODA</h1>
+
+    </header>
+
+
+
+    <section>
+        <h2>PROMEDIO</h2>
+        <p>Calcula el promedio de los datos que ingreses a <br> continuación</p>
+
+        <form>
+            <label for="valoresPromedio">Ingresa los valores numéricos separados por ","</label>
+            <input type="text" id="valoresPromedio">
+            <div>
+                <button type="button" onclick="promedioArray()">Calcular</button>
+            </div>
+        </form>
+        <div>
+            <table>
+                <tr>EL PROMEDIO ES</tr>
+                <td id="resultadoPromedio"></td>
+            </table>
+        </div>
+    </section>
+    <section>
+        <h3>MEDIA</h3>
+        <p>Calcula la media de los datos que ingreses a <br> continuación</p>
+
+        <form>
+            <label for="valoresMedia">Ingresa los valores numéricos separados por ","</label>
+            <input type="text" id="valoresMedia">
+
+            <button type="button" onclick="medianaArray()">Calcular</button>
+        </form>
+        <div>
+            <table>
+                <tr>LA MEDIANA ES</tr>
+                <td id="resultadoMediana"></td>
+            </table>
+        </div>
+    </section>
+    <section>
+        <h4>MODA</h4>
+        <p>Calcula la moda de los datos que ingreses a <br> continuación</p>
+
+        <form>
+            <label for="valoresModa">Ingresa los valores numéricos separados por ","</label>
+            <input type="text" id="valoresModa">
+
+            <button type="button" onclick="calcularModa()">Calcular</button>
+        </form>
+        <div>
+            <table>
+                <tr>LA MODA ES</tr>
+                <td id="resultadoModa"></td>
+            </table>
+        </div>
+    </section>
+    <section>
+        <h4>MEDIA GEOMÉTRICA</h4>
+        <p>Calcula la moda de los datos que ingreses a <br> continuación</p>
+
+        <form>
+            <label for="valoresModa">Ingresa los valores numéricos separados por ","</label>
+            <input type="text" id="valoresMediaGeometrica">
+
+            <button type="button" onclick="calcularMediaGeométrica()">Calcular</button>
+        </form>
+        <div>
+            <table>
+                <tr>LA MEDIA GEOMÉTRICA ES</tr>
+                <td id="resultadoMediaGeometrica"></td>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+
+        <a href="/index.html">HOME</a>
+
+    </footer>
+
 </body>
+
 </html>
