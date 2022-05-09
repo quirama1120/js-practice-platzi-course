@@ -1,0 +1,126 @@
+*{
+    font-family: 'Red Hat Mono', monospace; 
+    backdrop-filter: blur(3px);
+}
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/images/pexels-pixabay-534216.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    color: white;
+}
+header {
+    margin-top: 8%;
+    background-color: rgba(0, 0, 0, 0.50); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 22px;
+}
+section {
+    border-radius: 22px;
+    background-color: rgba(0, 0, 0, 0.50);  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8%;
+}
+form {
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 220px;
+    width: 60%;
+    justify-content: center;
+    
+}
+label {
+    display: flex;
+}
+input {
+    width: 20%;
+    border-radius: 22px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+button {
+    margin-top: 23px;
+    border-radius: 22px;
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+div {
+    margin-top: 22px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+}
+
+    table {
+    border-radius: 22px;
+    width: auto;
+    background-color: transparent;
+    margin-top:12px;
+}    
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.65); 
+    margin-top: 8%;
+    border-radius: 22px;
+}
+a {
+    color: white;
+    background-color: rgb(9, 4, 4, 0.7);
+    border-radius: 8px;
+    margin-top: 1px;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen {
+    body {
+        height: auto;
+        width: auto;
+    }
+    header {
+        width: auto;
+        height: auto;
+
+    }
+    p {
+        width: auto;
+    }
+    section {
+        height: auto;
+        width: auto;
+    }
+    form {
+        height: auto;
+        width: auto;
+    }
+    div {
+        height: auto;
+        width: auto;
+    }
+    button {
+        height: auto;
+        width: auto;
+    }
+    input {
+        width: auto;
+    }
+}
