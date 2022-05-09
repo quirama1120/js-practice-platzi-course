@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,32 @@
     <script src="./src/js/calculadoraIngresos.js"></script>
     <title>Calculadora de ingresos y discriminación de ingresos personalizado</title>
 </head>
+
 <body>
-    
+    <header>
+
+    </header>
+    <main>
+        <label for="ingresos">Ingresa los ingresos obtenidos en el último mes</label>
+        <input type="text" id="ingresos">
+        <button type="button" onclick="calcularIngresos()">Calcular Ingresos</button>
+        <button type="button" onclick="discriminarIngresos()">Discriminar Ingresos</button>
+    </main>
+    <div>
+        <table>
+            <tr>Total Ingresos Obtenidos</tr>
+            <td id="resultadoIngresos"></td>
+            <tr>Pantallas Netflix y cuentas Amazon</tr>
+            <td id="ingresoPantallaN"></td>
+            <tr>Pantallas Netflix y cuentas Amazon</tr>
+            <td id="ingresoPantallaDyHb"></td>
+            <tr>Cuenta Netflix completa</tr>
+            <td id="ingresoCuentaN"></td>
+            <tr>Cuenta HBO Y DISNEY completa</tr>
+            <td id="ingresoCuentaDyHb"></td>
+        </table>
+    </div>
+
 </body>
+
 </html>
