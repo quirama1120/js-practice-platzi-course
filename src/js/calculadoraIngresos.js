@@ -16,16 +16,23 @@ function discriminarIngresos() {
         }
     })
     Object.entries(cuentasVendidas).forEach(elemento => {
-    if (elemento[0] === "12000") {
-        document.getElementById("ingresoPantallaN").innerHTML=elemento[1]
-    }
-    if (elemento[0] === "6000") {
-        document.getElementById("ingresoPantallaDyHb").innerHTML=elemento[1]
-    }
-    if (elemento[0] === "32000") {
-        document.getElementById("ingresoCuentaN").innerHTML=elemento[1]
-    }
-    if (elemento[0] === "32000") {
-        document.getElementById("ingresoCuentaDyHb").innerHTML=elemento[1]
-    }})
+        switch (elemento[0]) {
+            case "12000": document.getElementById("ingresoPantallaN").innerHTML = elemento[1];
+                break;
+            case "6000": document.getElementById("ingresoPantallaDyHb").innerHTML = elemento[1];
+                break;
+            case "32000": document.getElementById("ingresoCuentaN").innerHTML = elemento[1];
+                break;
+            case "21000":
+                document.getElementById("ingresoPantallasN").innerHTML = elemento[1]
+                break;
+            case "15000":
+                document.getElementById("ingresoDiferente").innerHTML = elemento[1]
+                break;
+            default:
+                document.getElementById("ingresoDiferente").innerHTML = elemento[1]
+                break;
+
+        }
+    })
 }

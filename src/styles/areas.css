@@ -39,9 +39,8 @@
   td {
     border: 1px solid;
     background-color: white;
-    width: 60%;
+    width: auto;
     margin-top: 9px;
-  
     border-collapse: collapse;
   }
   
